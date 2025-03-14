@@ -4,8 +4,8 @@ const routes = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  "/blog": false,
+  "/gallery": false,
 };
 
 // Enable password protection on selected routes
@@ -94,7 +94,7 @@ const mailchimp = {
       opacity: 100,
     },
     lines: {
-      display: false,
+      display: true,
       color: "neutral-alpha-weak",
       opacity: 100,
     },

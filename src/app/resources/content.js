@@ -1,183 +1,251 @@
 import { InlineCode } from "@/once-ui/components";
-
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Mohamed",
+  lastName: "Hamed",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Mathematics Student, Full Stack Developer & Multimedia Designer",
+  experience:
+    "Over 8 years of multidisciplinary experience in full-stack development, graphic design, motion graphics, video editing, 3D modeling, and AI integration for business solutions.",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Egypt, Alexandria",
+  languages: ["Arabic", "English"],
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}'s Technical Insights</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I share in-depth articles about full-stack development, AI applications in
+      agriculture and business systems, as well as innovative approaches in
+      multimedia design, 3D modeling, and motion graphics.
     </>
   ),
 };
-
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/mohamedhamed",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
-  },
-  {
-    name: "Email",
-    icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "https://www.linkedin.com/in/mohamedhamed/",
   },
 ];
 
 const home = {
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  title: `${person.name}'s Professional Portfolio`,
+  description: `Showcasing my journey in mathematics, design, and software development.`,
+  headline: (
+    <>Mathematics Student, Full Stack Developer & Multimedia Designer</>
+  ),
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Mohamed, a dedicated professional at <InlineCode>Alex Co.</InlineCode>{" "}
+      and a passionate mathematics student at{" "}
+      <InlineCode>Al-Azhar University</InlineCode>, working on AI-powered
+      solutions for agricultural and business challenges.
     </>
   ),
 };
 
 const about = {
   label: "About",
-  title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  title: "Professional Profile",
+  description: `${person.name} | ${person.role} | ${person.location}`,
   tableOfContent: {
     display: true,
-    subItems: false,
+    subItems: true,
   },
   avatar: {
     display: true,
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/mohamed-hamed",
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Career Overview",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        With over 8 years of experience, I merge rigorous mathematical training
+        with extensive expertise in full-stack development and multimedia
+        design. My work spans enterprise-grade web applications, immersive 3D
+        visualizations, motion graphics, and AI-driven analytics, particularly
+        in agricultural management systems.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "Professional Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Alex Co.",
+        timeframe: "2020 - Present",
+        role: "Senior Graphic Designer, Tech Lead & Full Stack Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Led the design team in developing comprehensive branding solutions
+            for 50+ clients, improving client retention by 40%.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Developed enterprise-grade web applications using{" "}
+            <InlineCode>Next.js</InlineCode> and{" "}
+            <InlineCode>.NET API</InlineCode>, enhancing operational efficiency
+            by 35%.
+          </>,
+          <>
+            Integrated 3D modeling and motion graphics to create engaging visual
+            content, boosting customer engagement by 50%.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/alex-co/cover-01.jpg",
+            alt: "Alex Co. Projects",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Freelance Projects",
+        timeframe: "2016 - 2020",
+        role: "Full Stack Developer & Multimedia Specialist",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed 20+ custom web applications using modern technologies for
+            diverse industries.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Created dynamic motion graphics and educational content that reached
+            over 500k viewers.
+          </>,
+          <>
+            Built unified design systems for video production, reducing editing
+            time by 25%.
           </>,
         ],
         images: [],
       },
+      {
+        company: "Agricultural Management System",
+        timeframe: "2023 - Present",
+        role: "Lead Developer & Architect",
+        achievements: [
+          <>
+            Architecting an AI-powered analytics platform for agricultural
+            operations management.
+          </>,
+          <>
+            Implementing predictive models to optimize crop yield and enhance
+            sales team performance.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/agriculture-system/cover-01.jpg",
+            alt: "Agriculture System Dashboard",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education & Certifications",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Al-Azhar University",
+        description: (
+          <>
+            B.Sc. in Mathematics Education (Expected 2024)
+            <br />
+            Faculty of Education - Department of Mathematics
+          </>
+        ),
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Harvard CS50",
+        description: (
+          <>Completed a comprehensive computer science fundamentals course.</>
+        ),
+      },
+      {
+        name: "Professional Certifications",
+        description: (
+          <>
+            Adobe Certified Expert (Premiere Pro, After Effects)
+            <br />
+            Autodesk Maya Certified Professional
+          </>
+        ),
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Expertise",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Full-Stack Development",
+        description: (
+          <>
+            Building scalable applications with <InlineCode>Next.js</InlineCode>{" "}
+            frontends and <InlineCode>.NET API</InlineCode> backends. Skilled in
+            database design, cloud integration, and enterprise software
+            solutions.
+          </>
+        ),
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
+            src: "/images/skills/dev-stack.jpg",
+            alt: "Development Stack",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "3D Design & Motion Graphics",
+        description: (
+          <>
+            Creating immersive 3D visualizations and motion graphics using
+            Blender, Maya, and Three.js, enhancing storytelling and client
+            engagement.
+          </>
+        ),
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            src: "/images/skills/3d-design.jpg",
+            alt: "3D Design Projects",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "AI Integration",
+        description: (
+          <>
+            Developing machine learning models for business analytics, crop
+            yield optimization, and predictive maintenance in agricultural
+            systems.
+          </>
+        ),
+        images: [
+          {
+            src: "/images/skills/ai-integration.jpg",
+            alt: "AI Analytics Dashboard",
             width: 16,
             height: 9,
           },
@@ -189,94 +257,44 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Technical Articles & Case Studies",
+  description: `Explore ${person.name}'s insights on full-stack development, multimedia design, and AI-driven innovation.`,
 };
 
 const work = {
-  label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  label: "Projects",
+  title: "Portfolio Showcase",
+  description: `${person.name}'s professional projects spanning web development, multimedia design, and AI solutions.`,
 };
 
 const gallery = {
   label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
+  title: "Design & Development Portfolio",
+  description: `Visual collection of ${person.name}'s creative and technical projects.`,
   images: [
     {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
+      src: "/images/gallery/design-01.jpg",
+      alt: "Graphic Design Project",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
+      src: "/images/gallery/code-01.jpg",
+      alt: "Development Project",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
+      src: "/images/gallery/agri-dashboard.jpg",
+      alt: "Agricultural Analytics Dashboard",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/3d-farm.jpg",
+      alt: "3D Farm Simulation",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
+      src: "/images/gallery/motion-graphics.jpg",
+      alt: "Educational Animation",
       orientation: "horizontal",
     },
   ],
